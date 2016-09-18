@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Resonit</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_pentagon">PentagonActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_options">OptionsActivity</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="title_activity_select_level">SelectLevelActivity</string>
+    <string name="help_txt">Six people went on a walk together.
+        But they got separated.
+        Your job is to make these people reach where they ought to be.
+        Unfortunately, you have to follow certain basic traffic rules so while you move one of them a few other will move accordingly.
+        With this constraint you have to make them reach their places in reasonable time.</string>
+    <string name="banner_ad_unit_id">AD-KEY</string>
+    <string name="about">Raghavendra Tripathi for his extremely valuable inputs \nHimanshu Grover for his creativity \nLuke Deighton for his awesome WheelView \nGabriel Araujo for creating melodies \nfreepik.com for its beautiful illustrations \nFBStart for selecting this game for its generous grant :)
+    \n\n\nWant to say hi ? Drop a mail at teamtoroshu@gmail.com
+    </string>
+
+</resources>

@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/playbg"
+    tools:context=".ui.Options">
+
+
+    <ImageView
+        android:id="@+id/easybutton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="62dp"
+        android:layout_marginRight="62dp"
+        android:layout_toLeftOf="@+id/normalbutton"
+        android:layout_toStartOf="@+id/normalbutton"
+        android:nestedScrollingEnabled="true"
+        android:onClick="play"
+        android:src="@drawable/play" />
+
+    <ImageView
+        android:id="@+id/helpbutton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignTop="@+id/normalbutton"
+
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_toEndOf="@+id/normalbutton"
+        android:layout_toRightOf="@+id/normalbutton"
+        android:onClick="help"
+        android:src="@drawable/help" />
+
+    <ImageView
+        android:id="@+id/normalbutton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignTop="@+id/easybutton"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:onClick="about"
+        android:src="@drawable/about" />
+</RelativeLayout>

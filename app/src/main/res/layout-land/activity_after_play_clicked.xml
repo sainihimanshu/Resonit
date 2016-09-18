@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/playbg">
+
+
+    <ImageView
+        android:id="@+id/easybutton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="64dp"
+        android:layout_toLeftOf="@+id/normalbutton"
+        android:layout_toStartOf="@+id/normalbutton"
+        android:onClick="easy"
+        android:src="@drawable/easy" />
+
+    <ImageView
+        android:id="@+id/hardbutton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="64dp"
+        android:layout_toEndOf="@+id/normalbutton"
+        android:layout_toRightOf="@+id/normalbutton"
+        android:onClick="difficult"
+        android:src="@drawable/hard" />
+
+    <ImageView
+        android:id="@+id/normalbutton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="normal"
+        android:src="@drawable/normal" />
+</RelativeLayout>

@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/town"
+    tools:context=".ui.PlayGround">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+
+    </com.google.android.gms.ads.AdView>
+
+    <ImageView
+        android:id="@+id/p1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/e0"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/hospital" />
+
+
+    <ImageView
+        android:id="@+id/p2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/e0"
+
+
+        android:layout_margin="10dp"
+        android:layout_toEndOf="@+id/e0"
+        android:layout_toRightOf="@+id/e0"
+        android:src="@drawable/ship" />
+
+    <ImageView
+        android:id="@+id/p3"
+        android:layout_width="40dp"
+
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_margin="10dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:src="@drawable/school" />
+
+    <ImageView
+        android:id="@+id/p4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView"
+        android:src="@drawable/policestation" />
+
+    <ImageView
+        android:id="@+id/p5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/e0"
+
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@+id/e0"
+        android:layout_toStartOf="@+id/e0"
+        android:src="@drawable/workplace" />
+
+    <ImageView
+        android:id="@+id/e0"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp" />
+
+    <ImageView
+        android:id="@+id/lup"
+        android:layout_width="@dimen/updownbutton"
+        android:layout_height="@dimen/updownbutton"
+        android:layout_above="@+id/e0"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_margin="10dp"
+        android:onClick="leftUp"
+        android:src="@drawable/up" />
+
+    <ImageView
+        android:id="@+id/ldown"
+        android:layout_width="@dimen/updownbutton"
+        android:layout_height="@dimen/updownbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:onClick="leftDown"
+        android:src="@drawable/down" />
+
+    <ImageView
+        android:id="@+id/rup"
+        android:layout_width="@dimen/updownbutton"
+        android:layout_height="@dimen/updownbutton"
+        android:layout_above="@+id/e0"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:onClick="rightUp"
+        android:src="@drawable/up" />
+
+    <ImageView
+        android:id="@+id/rdown"
+        android:layout_width="@dimen/updownbutton"
+        android:layout_height="@dimen/updownbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_margin="10dp"
+        android:onClick="rightDown"
+        android:src="@drawable/down" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/e0"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/n0" />
+
+    <ImageView
+        android:id="@+id/e1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/p1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/n1" />
+
+    <ImageView
+        android:id="@+id/e2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/p2"
+        android:layout_toEndOf="@+id/p2"
+        android:layout_toRightOf="@+id/p2"
+        android:src="@drawable/n2" />
+
+    <ImageView
+        android:id="@+id/e3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/p3"
+        android:layout_alignStart="@+id/p3"
+        android:layout_below="@+id/p4"
+        android:src="@drawable/n3" />
+
+    <ImageView
+        android:id="@+id/e4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_below="@+id/p4"
+        android:src="@drawable/n4" />
+
+    <ImageView
+        android:id="@+id/e5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/p5"
+        android:layout_toLeftOf="@+id/p5"
+        android:layout_toStartOf="@+id/p5"
+        android:src="@drawable/n5" />
+
+    <ImageView
+        android:id="@+id/quickhelpimg"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/e2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/e2"
+        android:onClick="q"
+        android:src="@drawable/q" />
+
+
+</RelativeLayout>

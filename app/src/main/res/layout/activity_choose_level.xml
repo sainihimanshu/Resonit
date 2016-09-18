@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".ui.ChooseLevel">
+
+    <com.lukedeighton.wheelview.WheelView
+        android:id="@+id/wheelview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:repeatItems="true"
+        app:rotatableWheelDrawable="true"
+        app:selectionAngle="90.0"
+        app:wheelDrawable="@drawable/levelfinder"
+        app:wheelItemCount="10"
+        app:wheelItemRadius="30dp"
+        app:wheelPadding="15dp"
+        app:wheelPosition="bottom"
+        app:wheelRadius="250dp" />
+
+    <TextView
+        android:id="@+id/levelselecttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:text="Select a level"
+        android:textColor="#F79557"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
